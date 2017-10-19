@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content{
+            position: relative;
+        }
+
+        .left {
+            position: absolute;
+            left:0;
+            width: 200px;
+            height: 500px;
+            background: palegoldenrod;
+        }
+
+        .main {
+            margin-left: 200px;
+            margin-right: 200px;
+            height: 500px;            
+            background: palegreen;
+        }
+
+        .right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 500px;            
+            background: paleturquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="left">l</div>
+        <div class="main">m</div>
+        <div class="right">r</div>        
+    </div>
+    <p>缺点是：当父元素有内外边距时，会导致中间栏出现偏差</p>
+</body>
+
+</html>
